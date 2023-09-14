@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,500:1,700$display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+.container {
+    width: 100%;
+
+    display: grid;
+    grid:
+        "header" auto
+        "main" 1fr
+        "footer" auto
+        / 1fr;
+    gap: 8px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #252b48;
+    color:white;
+    text-align: center;
+}
+,main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color:#fff;
+    text-align:center;
+    padding:20px 0;
+    margin-top: 50px;
+}
+.about p{
+    font-weight: 500;
+}
+
+.card {
+    margin-left: 30%;
+    margin-top: 100px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card_title {
+    background-color: #164b60;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color:#f2f5f8;
+    text-align: center;
+}
+
+.card_content img {
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+
+.card_content h5,
+p {
+    margin-left: 7%;
+}
+
+.card_content p {
+    text-align: center;
+}
+
+.containerForm {
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-container .hitung {
+    background-color: #183d3d;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.hasil {
+    font-weight: bold;
+}
