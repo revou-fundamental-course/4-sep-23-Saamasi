@@ -1,5 +1,5 @@
 const HasilLuas = document.getElementsById("hasilLuas");
-conts HasilKeliling = document.getElementById("hasilKeliling")
+const HasilKeliling = document.getElementById("hasilKeliling")
 
 function hitungLuas() {
     const sisi = parseInt(document.getElementById("luasSisi").value);
@@ -8,10 +8,10 @@ function hitungLuas() {
         return;
     }
     const luas = sisi * sisi;
-    HasilLuas.innerHTML =
-    <p>Hasil :</p>
-    <p>${luas} cm2</p>
-    ;
+    HasilLuas.innerHTML = `
+        <p>Hasil :</p>
+        <p> ${luas} cm2 </p></>
+    `;
 }
 
 function hitungKeliling() {
@@ -20,11 +20,11 @@ function hitungKeliling() {
         alert("Jumlah sisi harus bilangan positif dan tidak boleh kosong atau 0.");
         return;
     }
-    const luas = 4 * sisi;
-    HasilKeliling.innerHTML =
+    const keliling = 4 * sisi;
+    HasilKeliling.innerHTML = `
     <p>Hasil :</p>
-    <p>${keliling} cm2</p>
-    ;
+    <p>${keliling} cm</p>
+    `;
 }
 
 document.getElementById("hitungLuas").addEventListener("click", hitungLuas);
